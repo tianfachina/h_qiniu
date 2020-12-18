@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
         '.' +
         file.path.split('.').last;
     //上传文件
-    bool result = await syStorage.upload(file.path, token, key);
+    bool result = await syStorage.upload(file.path, token, key: key);
     print(result); //true 上传成功，false失败
   }
 
